@@ -1,0 +1,18 @@
+package: gitlab.com/fanky5g/dynamodb-helpers
+import:
+- package: github.com/aws/aws-sdk-go
+  version: ^1.12.48
+  subpackages:
+  - aws
+  - service/dynamodb
+  - service/dynamodb/dynamodbattribute
+- package: gitlab.com/fanky5g/paysenger
+  subpackages:
+  - server/config
+  - server/types
+  - server/util
+testImport:
+- package: github.com/stretchr/testify
+  version: ^1.1.4
+  subpackages:
+  - assert
